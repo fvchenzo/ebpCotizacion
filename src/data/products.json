@@ -1,0 +1,31 @@
+[
+  { 
+        "name": "Paleta M.M de 25 colores",
+        "desc": "descripcion 1",
+        "priceUnt": "18.0",
+        "priceX3Unt": "15.0",
+        "priceX6Unt": "14.5",
+        "priceX12Unt": "14.0",
+        "box": "0"
+  },
+  { 
+        "name": "producto2",
+        "desc": "producto2",
+        "price": "22.0",
+        "priceX3Unt": "6",
+        "priceX3Unt": "4.25",
+        "priceX6Unt": "4.5",
+        "priceX3Unt": "4.00",
+        "box": "0"
+  },
+  {
+        "name": "producto3",
+        "desc": "descripción 3",
+        "price": "23.0",
+        "priceX3Unt": "6",
+        "priceX6Unt": "4.5",
+        "priceX3Unt": "4.25",
+        "priceX3Unt": "4.00",
+        "box": "0"
+  }
+]

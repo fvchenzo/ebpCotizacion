@@ -1,14 +1,16 @@
 [
-  { 
+  {
+        "id": "1",
         "name": "Paleta M.M de 25 colores",
         "desc": "descripcion 1",
-        "priceUnt": "18.0",
+        "price": "18.0",
         "priceX3Unt": "15.0",
         "priceX6Unt": "14.5",
         "priceX12Unt": "14.0",
         "box": "0"
   },
-  { 
+  {
+        "id": "2",
         "name": "producto2",
         "desc": "producto2",
         "price": "22.0",
@@ -19,6 +21,7 @@
         "box": "0"
   },
   {
+        "id": "3",
         "name": "producto3",
         "desc": "descripción 3",
         "price": "23.0",

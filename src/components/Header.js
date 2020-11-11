@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
-      <img src="/img/logo.jpg" alt="logo"/>
+      <Link to="/">
+        <img src="assets/img/logo.jpg" alt="logo" />  
+      </Link>
+      
     </header>
   )
 }

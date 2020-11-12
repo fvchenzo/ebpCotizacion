@@ -1,32 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
+import React, { Component } from 'react'
 
-const Product = ( props ) => {
-  const { id, name, desc, price, priceX3Unit, priceX6Unt, priceX12Unt, box } = props.information;
+class Product extends Component {
+  render() {
+  //const { id, name, desc, price, priceX3Unit, priceX6Unt, priceX12Unt, box } = this.props.information;
+  const infoProduct = this.props.information;
 
   return (
       <tr>
-        <td> {id} </td>
-        <td> {name} </td>
-        <td><img src={`assets/img/products/${name}.jpeg`} alt={name} width='20%' /></td>
-        <td> {desc} </td>
+        <td> {infoProduct.id} </td>
+        <td> {infoProduct.name} </td>
+        <td><img src={`assets/img/products/${infoProduct.name}.jpeg`} alt={infoProduct.name} width='100%' /></td>
+        <td> {infoProduct.desc} </td>
         <td> 
-          Precio por unidad: {price} <br></br>
-          Precio por 3 unidades: {priceX3Unit} <br></br>
-          Precio por 6 unidades: {priceX6Unt} <br></br>
-          Precio por 12 unidades: {priceX12Unt} <br></br>
-          Precio por box: {box} <br></br>
+          Precio por unidad: {infoProduct.price} <br></br>
+          Precio por 3 unidades: {infoProduct.priceX3Unit} <br></br>
+          Precio por 6 unidades: {infoProduct.priceX6Unt} <br></br>
+          Precio por 12 unidades: {infoProduct.priceX12Unt} <br></br>
+          Precio por box: {infoProduct.box} <br></br>
         </td>
         <td>
           <input type="text"></input>
         </td>
         <td>
-          <button type="button" className="success button">Agregar</button>
-          <button type="button" className="warning button">Modificar</button>
-          <button type="button" className="alert button">Borrar</button>
+          <button type="button" className="primary button" 
+                  onClick={() => this.props.addProductToShoppingCart(infoProduct)}
+          >Agregar</button>
+          
         </td>
       </tr>
     )
+  }
 }
 
 export default Product;

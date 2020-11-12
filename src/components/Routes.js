@@ -11,21 +11,63 @@ class Routes extends Component {
 
   state = {
     products: infoProducts,
+    shoppingCart: [],
+  }
+  
+  /*
+  checkListToShooppingCart = () => {
+    if (this.state.shoppingCart === 0) {
+      alert("Debes agregar un producto como minimo")
+    }
+  }
+  */
+  addProductToShoppingCart = (product) => {
+    console.log(this.state.shoppingCart);
+    if (!product) return null
+    if (this.state.shoppingCart.length === 0) {
+      //console.log("Dentro del if");
+      this.setState.shoppingCart = this.state.shoppingCart.push(product)
+    }
+    else {
+      console.log(this.state.shoppingCart);
+      if (this.state.shoppingCart.find(element => product.id === element.id)) {
+        console.log(`Ya se agrego este producto:${product.id}` );
+      } else {
+        this.setState.shoppingCart = this.state.shoppingCart.push(product)
+      }
+    }
+
+    console.log(this.state.shoppingCart.length);
+  }
+
+  deleteProductToShoppingCart = () => {
+    console.log("borrar producto de lista de carrito de compra");
   }
 
   render() {
+    console.log(this.state.shoppingCart);
     return (
       <Router>
         <Header />
-
+        
         <Switch>
           {/* <Route path="/" exact component={Home}></Route> */}
+          <Route path="/cotizacion" render={ () => (
+            <Quotation 
+              shoppingCart={this.state.shoppingCart}
+              deleteProductToShoppingCart={this.deleteProductToShoppingCart}
+            />
+            )}>
+          </Route>
+
           <Route path="/" render={ () => (
-            <Products products={this.state.products}></Products>
+            <Products 
+              products={this.state.products}
+              addProductToShoppingCart={this.addProductToShoppingCart}
+            />
             )}>
           </Route>
           
-          <Route exact path="/cotizacion" component={Quotation}></Route>
           <Route component={Error}></Route>
         </Switch>
       </Router>

@@ -13,11 +13,13 @@ class ListProducts extends Component {
           <Product 
             information={listProducts[product]}
             key={product}
+            addProductToShoppingCart={this.props.addProductToShoppingCart}
           />
         ))}
       </React.Fragment>
     )
   }
+
   render() {
     return (
       <table className="table">
@@ -25,16 +27,15 @@ class ListProducts extends Component {
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Producto</th>
-            <th scope="col">Imagen</th>
-            <th scope="col">Descripción</th>
+            <th scope="col" width="20%">Imagen</th>
+            <th scope="col" width="25%">Descripción</th>
             <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
+            <th scope="col" width="5%">Cantidad</th>
             <th scope="col">Acción</th>
           </tr>
         </thead>
         <tbody>
           {this.showProducts()}
-          
         </tbody>
       </table>
     )

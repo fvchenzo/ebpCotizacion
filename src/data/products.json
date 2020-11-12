@@ -7,7 +7,7 @@
         "priceX3Unt": "15.0",
         "priceX6Unt": "14.5",
         "priceX12Unt": "14.0",
-        "box": "0"
+        "box": "0.0"
   },
   {
         "id": "2",
@@ -18,7 +18,7 @@
         "priceX3Unt": "4.25",
         "priceX6Unt": "4.5",
         "priceX3Unt": "4.00",
-        "box": "0"
+        "box": "0.0"
   },
   {
         "id": "3",
@@ -29,6 +29,6 @@
         "priceX6Unt": "4.5",
         "priceX3Unt": "4.25",
         "priceX3Unt": "4.00",
-        "box": "0"
+        "box": "0.0"
   }
 ]

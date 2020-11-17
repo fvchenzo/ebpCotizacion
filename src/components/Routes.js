@@ -32,6 +32,7 @@ class Routes extends Component {
       console.log(this.state.shoppingCart);
       if (this.state.shoppingCart.find(element => product.id === element.id)) {
         console.log(`Ya se agrego este producto:${product.id}` );
+        alert("ya se agregó este producto")
       } else {
         this.setState.shoppingCart = this.state.shoppingCart.push(product)
       }

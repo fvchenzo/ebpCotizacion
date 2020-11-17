@@ -19,7 +19,16 @@ class ListProducts extends Component {
       </React.Fragment>
     )
   }
-
+  render(){
+    return(
+      <div className="grid-container">
+        <div className="grid-x grid-margin-x small-up-2 medium-up-3">
+          {this.showProducts()}
+        </div>
+      </div>
+    )
+  }
+/*
   render() {
     return (
       <table className="table">
@@ -40,7 +49,7 @@ class ListProducts extends Component {
       </table>
     )
   }
-  
+*/
 }
 
 export default ListProducts;

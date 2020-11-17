@@ -12,13 +12,16 @@ class ProductQuotation extends Component {
         <td> {productToListShoppingCart.desc} </td>
         <td>
           Precio por unidad: {productToListShoppingCart.price} <br></br>
-          Precio por 3 unidades: {productToListShoppingCart.priceX3Unit} <br></br>
+          Precio por 3 unidades: {productToListShoppingCart.priceX3Unt} <br></br>
           Precio por 6 unidades: {productToListShoppingCart.priceX6Unt} <br></br>
           Precio por 12 unidades: {productToListShoppingCart.priceX12Unt} <br></br>
           Precio por box: {productToListShoppingCart.box} <br></br>
         </td>
         <td>
-          <input type="text"></input>
+          <label>
+            <input type="number" value="1" ></input>
+          </label>
+          
         </td>
         <td>
           <button type="button" className="alert button"

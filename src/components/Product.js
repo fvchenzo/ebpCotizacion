@@ -9,7 +9,7 @@ class Product extends Component {
   return(
         <div className="col-lg-3">
           <div className="card mb-4 shadow-sm">
-          <img className="card-img-top" src={`assets/img/products/${infoProduct.name}.jpeg`} alt={infoProduct.name} />
+          <img className="card-img-top" src="http://placehold.it/300x400" alt={infoProduct.name} />
           <div className="card-body">
             <h4>{infoProduct.name}</h4>
             <p className="card-text">{infoProduct.desc}</p>

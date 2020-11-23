@@ -14,7 +14,7 @@ class Quotation extends Component {
 
         <hr></hr>
         <div className="text-right">
-          <Link to="/" className="button primary">Seguir Comprando</Link>
+          <Link to="/" className="btn btn-primary mb-3">Seguir Comprando</Link>
         </div>
         <ListQuotation
           shoppingCart={this.props.shoppingCart}

@@ -7,7 +7,7 @@ class Product extends Component {
   const infoProduct = this.props.information;
   
   return(
-        <div className="col-lg-3">
+        <div className="col-lg-3 col-md-4 col-sm-6">
           <div className="card mb-4 shadow-sm">
           <img className="card-img-top" src="http://placehold.it/300x400" alt={infoProduct.name} />
           <div className="card-body">

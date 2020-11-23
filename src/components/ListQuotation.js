@@ -23,7 +23,7 @@ class ListQuotation extends Component {
   render () {
     
     return(
-      <table className="table">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th scope="col">ID</th>

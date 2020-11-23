@@ -19,37 +19,19 @@ class ListProducts extends Component {
       </React.Fragment>
     )
   }
+
   render(){
     return(
-      <div className="grid-container">
-        <div className="grid-x grid-margin-x small-up-2 medium-up-3">
-          {this.showProducts()}
+      <div className="album py-5">
+        <div className="container">
+          <div className="row">
+            {this.showProducts()}
+          </div>
         </div>
       </div>
+        
+        
     )
   }
-/*
-  render() {
-    return (
-      <table className="table">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Producto</th>
-            <th scope="col" width="20%">Imagen</th>
-            <th scope="col" width="25%">Descripción</th>
-            <th scope="col">Precio</th>
-            <th scope="col" width="5%">Cantidad</th>
-            <th scope="col">Acción</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.showProducts()}
-        </tbody>
-      </table>
-    )
-  }
-*/
 }
-
 export default ListProducts;

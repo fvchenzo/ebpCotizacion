@@ -5,17 +5,18 @@ import ListProducts from './ListProducts';
 class Products extends Component {
   render () {
     return (
-      <div className="text-center">
+      <div className="container-fluid text-center">
         <h2>Nuestros Productos</h2>
         <h6 className="subheader">Texto informativo</h6> <br></br>
 
-        <Link to="/cotizacion" className="primary button"> Ver tu carrito de Compra</Link>
+        <Link to="/cotizacion" className="btn btn-primary"> Ver tu carrito de Compra</Link>
         <hr></hr>
-
-        <ListProducts
-          products={this.props.products}
-          addProductToShoppingCart={this.props.addProductToShoppingCart}
-        />
+        
+          <ListProducts
+            products={this.props.products}
+            addProductToShoppingCart={this.props.addProductToShoppingCart}
+          />
+        
       </div>
     )
   }

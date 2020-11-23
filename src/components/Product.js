@@ -7,29 +7,23 @@ class Product extends Component {
   const infoProduct = this.props.information;
   
   return(
-    <div className="cell">
-      <div className="card">
-        <img src={`assets/img/products/${infoProduct.name}.jpeg`} alt={infoProduct.name} />
-        <div className="card-section">
-          <h4>{infoProduct.name}</h4>
-          <p>{infoProduct.desc}</p>
-        </div>
-        <div className="card-section">
-          <div className="grid-x">
-            <div className="cell small-9">
+        <div className="col-lg-3">
+          <div className="card mb-4 shadow-sm">
+          <img className="card-img-top" src={`assets/img/products/${infoProduct.name}.jpeg`} alt={infoProduct.name} />
+          <div className="card-body">
+            <h4>{infoProduct.name}</h4>
+            <p className="card-text">{infoProduct.desc}</p>
+          </div>
+          <div className="card-body">
+            <div className="d-flex justify-content-between align-items-center">
               <h4 className="text-left"> S/. {infoProduct.price}</h4>
-            </div>
-            <div className="cell large-auto">
-              <a className="primary button text-right"
+              <a className="btn btn-primary text-right"
                 onClick={() => this.props.addProductToShoppingCart(infoProduct)}
-              >Agregar</a>
+              >Comprar</a>
             </div>
           </div>
-          
         </div>
-      </div>
-
-    </div>
+        </div>
   )
   }
 }
